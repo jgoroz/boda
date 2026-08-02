@@ -1,0 +1,140 @@
+:root {
+    --font-title: "Parisienne", cursive;
+    --background: #cdf5e5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background);
+    font-family: Georgia, serif;
+    color: #000;
+}
+
+/* Título */
+
+.hero-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 30px 20px;
+
+    /* Fondo semitransparente para que la foto se vea por detrás */
+    background: rgba(205, 245, 229, 0.7);
+    backdrop-filter: blur(8px);
+}
+
+.hero-header h1 {
+    font-family: var(--font-title);
+    font-size: clamp(4rem, 9vw, 7rem);
+    font-weight: 400;
+    line-height: 1;
+}
+
+/* Contenido */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Foto */
+
+.hero-photo {
+    width: min(90vw, 600px);
+    border-radius: 14px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+/* Contenido posterior */
+
+.content {
+    width: min(900px, 90%);
+    min-height: 200vh; /* Solo para que puedas probar el scroll */
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.content p {
+    line-height: 1.7;
+}
+
+.calendar-button {
+    display: inline-block;
+    margin: 30px 0 60px;
+    padding: 14px 30px;
+
+    background-color: #6b8e6b;
+    color: white;
+    text-decoration: none;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    border-radius: 999px;
+
+    transition: all 0.25s ease;
+}
+
+.calendar-button:hover {
+    background-color: #587758;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.calendar-button:active {
+    transform: translateY(0);
+}
+
+.location-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    margin-bottom: 60px;
+}
+
+.location-button {
+    display: inline-block;
+
+    min-width: 180px;
+
+    padding: 14px 28px;
+
+    background-color: #ffffff;
+    color: #3c5d49;
+
+    text-decoration: none;
+    text-align: center;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    border: 2px solid #6b8e6b;
+    border-radius: 999px;
+
+    transition: all .25s ease;
+}
+
+.location-button:hover {
+    background-color: #6b8e6b;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
