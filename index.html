@@ -32,13 +32,21 @@
             
             <p>NOS CASAMOS</p>
             <h2>19 de septiembre de 2027</h2>
-            <a
-              class="calendar-button"
-              href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Boda+Daria+y+Joaquin&dates=20270619&details&location=W%C3%B3lka+Nied%C5%BAwiedzka"
-              target="_blank"
-              rel="noopener noreferrer">
-              📅 Añadir al calendario
-            </a>
+            <button
+    id="calendar-button"
+    class="calendar-button"
+    type="button"
+    disabled
+>
+    Añadir a Google Calendar
+</button>
+
+<p
+    id="calendar-status"
+    class="calendar-status"
+    role="status"
+    aria-live="polite"
+></p>
             <div class="location-buttons">
             <a
                 class="location-button"
@@ -64,6 +72,13 @@
         
 
     </main>
+<script src="./main.js"></script>
 
+<script
+    src="https://accounts.google.com/gsi/client"
+    async
+    defer
+    onload="gisLoaded()"
+></script>
 </body>
 </html>
