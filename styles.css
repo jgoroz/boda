@@ -138,17 +138,3 @@ main {
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0,0,0,.15);
 }
-
-.calendar-button:disabled {
-    cursor: not-allowed;
-    opacity: 0.65;
-    transform: none;
-}
-
-.calendar-status {
-    min-height: 1.5rem;
-    margin: -40px 20px 40px;
-    text-align: center;
-    font-size: 1rem;
-    line-height: 1.4;
-}
