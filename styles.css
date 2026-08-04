@@ -25,7 +25,7 @@ body {
     display: flex;
     justify-content: center;
 
-    padding: 30px 20px;
+    padding: 10px 20px;
 
     /* Fondo semitransparente para que la foto se vea por detrás */
     background: rgba(205, 245, 229, 0.7);
@@ -53,7 +53,7 @@ main {
     width: min(90vw, 600px);
     border-radius: 14px;
     margin-top: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 
     transform: scale(1);
     transform-origin: center center;
@@ -143,4 +143,31 @@ main {
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+
+.location-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin: 20px 0 24px;
+}
+
+.location-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin: 20px 0 24px;
+}
+
+.location-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.location-separator {
+    width: 80%;
+    height: 1px;
+    background-color: #6b8e6b;
 }
